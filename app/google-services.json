@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "649272918279",
+    "project_id": "hdate-edac2",
+    "storage_bucket": "hdate-edac2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649272918279:android:5d22a9776392183d3a85a2",
+        "android_client_info": {
+          "package_name": "com.q.hdate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh_pMq1j1xSUaVqC3Jzv0uwZd4IyP7dKs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
