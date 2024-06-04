@@ -19,7 +19,7 @@ import kotlin.math.abs
 class MainActivity : AppCompatActivity() {
 
     private lateinit var flingContainer: SwipeFlingAdapterView
-    private val al = ArrayList<String>()
+    private val al = ArrayList<Int>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         al.add(R.drawable.placeholder_image)
         al.add(R.drawable.error_image)
 
-        val arrayAdapter = CardAdapter(this, 0, al)
+        val arrayAdapter = CardAdapter(this, 0, al) // Sử dụng CardAdapter đã sửa
         flingContainer.adapter = arrayAdapter
 
         // Xử lý sự kiện vuốt (like/dislike)
