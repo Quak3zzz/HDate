@@ -9,17 +9,17 @@ import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.q.hdate.R
 
-class CardAdapter(context: Context, resourceId: Int, items: List<String>) : ArrayAdapter<String>(context, resourceId, items) {
+class CardAdapter(context: Context, resourceId: Int, items: List<Int>) : ArrayAdapter<Int>(context, resourceId, items) {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         var convertView = convertView
-        val imageUrl = getItem(position)
+        val imageResId = getItem(position) // imageResId bây giờ là Int
 
         if (convertView == null) {
             convertView = LayoutInflater.from(context).inflate(R.layout.item, parent, false)
         }
 
         val imageView = convertView!!.findViewById<ImageView>(R.id.ivProfileImage)
-        Glide.with(context).load(imageUrl).into(imageView)
+        imageView.setImageResource(imageResId!!) // Sử dụng imageResId để set ảnh
 
         return convertView
     }

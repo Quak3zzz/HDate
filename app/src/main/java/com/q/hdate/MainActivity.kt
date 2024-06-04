@@ -1,17 +1,8 @@
 package com.q.hdate // Thay thế bằng package name của bạn
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.ImageView
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.bumptech.glide.Glide
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.*
 import com.lorentzos.flingswipe.SwipeFlingAdapterView
 import com.q.hdate.Cards.CardAdapter
 import kotlin.math.abs
@@ -28,9 +19,14 @@ class MainActivity : AppCompatActivity() {
         flingContainer = findViewById(R.id.frame)
 
         // Thêm các URL ảnh mẫu vào danh sách
-        al.add(R.drawable.error_image)
-        al.add(R.drawable.placeholder_image)
-        al.add(R.drawable.error_image)
+        al.add(R.drawable.a1)
+        al.add(R.drawable.a2)
+        al.add(R.drawable.a3)
+        al.add(R.drawable.a4)
+        al.add(R.drawable.a5)
+        al.add(R.drawable.a6)
+        al.add(R.drawable.a7)
+        al.add(R.drawable.a8)
 
         val arrayAdapter = CardAdapter(this, 0, al) // Sử dụng CardAdapter đã sửa
         flingContainer.adapter = arrayAdapter
