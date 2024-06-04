@@ -53,6 +53,8 @@ android {
 }
 
 dependencies {
+    implementation("com.google.android.material:material:1.9.0")  // Sử dụng phiên bản mới nhất
+    implementation("androidx.core:core-splashscreen:1.0.1") // Sử dụng phiên bản mới nhất
     implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.lorentzos.swipecards:library:1.0.9")
