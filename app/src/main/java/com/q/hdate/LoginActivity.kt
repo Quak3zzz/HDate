@@ -1,4 +1,4 @@
-package com.q.hdate // Thay thế bằng package name của bạn
+package com.q.hdate
 
 import android.content.Intent
 import android.os.Bundle

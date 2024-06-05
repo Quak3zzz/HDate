@@ -1,8 +1,8 @@
 package com.q.hdate
 
 data class User(
-    val uid: String,
-    val name: String,
-    val profileImageUrl: String?,
-    val age: Int
+    var uid: String? = null,
+    var name: String? = null,
+    var profileImageUrl: String? = null,
+    var gender: String? = null
 )

@@ -1,8 +1,9 @@
-package com.q.hdate // Thay thế bằng package name của bạn
+package com.q.hdate
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
 import com.lorentzos.flingswipe.SwipeFlingAdapterView
 import com.q.hdate.Cards.CardAdapter
 import kotlin.math.abs
@@ -11,6 +12,9 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var flingContainer: SwipeFlingAdapterView
     private val al = ArrayList<Int>()
+
+    val currentUser = FirebaseAuth.getInstance().currentUser
+    val currentUserId = currentUser?.uid ?: "" // Lấy UID của người dùng hiện tại
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
